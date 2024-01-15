@@ -1,7 +1,18 @@
 <?php
 
 $partiteCampionato = [
-    
+    [
+        'squadraCasa' => ['Bologna', 90],
+        'squadraOspite' => ['Milano', 50]
+    ],
+    [
+        'squadraCasa' => ['Bari', 92],
+        'squadraOspite' => ['Ostia', 34]
+    ],
+    [
+        'squadraCasa' => ['Nonantola', 60],
+        'squadraOspite' => ['Como', 46]
+    ],
 ]
 
 ?>
@@ -14,6 +25,8 @@ $partiteCampionato = [
     <title>Document</title>
 </head>
 <body>
+
+<?php var_dump($partiteCampionato) ?>
     
 </body>
 </html>
