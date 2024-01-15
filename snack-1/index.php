@@ -2,16 +2,22 @@
 
 $partiteCampionato = [
     [
-        'squadraCasa' => ['Bologna', 90],
-        'squadraOspite' => ['Milano', 50]
+        'squadra1' => 'Bologna',
+        'punteggio1' => 90,
+        'squadra2' => 'Milano',
+        'punteggio2' => 50
     ],
     [
-        'squadraCasa' => ['Bari', 92],
-        'squadraOspite' => ['Ostia', 34]
+        'squadra1' => 'Bari',
+        'punteggio1' => 92,
+        'squadra2' => 'Ostia',
+        'punteggio2' => 34
     ],
     [
-        'squadraCasa' => ['Nonantola', 60],
-        'squadraOspite' => ['Como', 46]
+        'squadra1' => 'Nonantola',
+        'punteggio1' => 60,
+        'squadra2' => 'Como',
+        'punteggio2' => 46
     ],
 ]
 
@@ -26,7 +32,16 @@ $partiteCampionato = [
 </head>
 <body>
 
-<?php var_dump($partiteCampionato) ?>
+<!-- <?php var_dump($partiteCampionato) ?> -->
+
+<ul><?php foreach($partiteCampionato as $partita){ ?>
+    
+    <li> 
+        <p><?php ?></p>
+    </li>
+    
+    <?php } ?>
+</ul>
     
 </body>
 </html>
