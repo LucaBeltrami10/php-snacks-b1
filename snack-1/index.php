@@ -1,5 +1,9 @@
 <?php
 
+$partiteCampionato = [
+    
+]
+
 ?>
 
 <!DOCTYPE html>
