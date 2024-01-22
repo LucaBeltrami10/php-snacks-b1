@@ -8,5 +8,8 @@ Contare i corsi (courses) che hanno lo stesso corso di laurea (degree)
 1)
 SELECT * FROM `students` WHERE `surname` LIKE('%o');
 
+2)
+SELECT AVG(`vote`), `exam_id` FROM `exam_student`GROUP BY `exam_id` HAVING AVG(`vote`) > 28;
+
 
 
