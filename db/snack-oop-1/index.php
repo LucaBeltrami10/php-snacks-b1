@@ -39,15 +39,19 @@ class Pokemon
      * @param [type] $_livelloPrimaEvoluzione /inserisci liv prima evoluzione
      * @param [type] $_livelloSecondaEvoluzione /inserisci liv seconda evoluzione
      */
-    function __construct($_nome, $_altezza, $_peso, $_livelloPrimaEvoluzione, $_livelloSecondaEvoluzione)
+    function __construct($_nome, $_altezza, $_peso, $_livelloPrimaEvoluzione, $_livelloSecondaEvoluzione, $_tipo)
     {
-        return $this->nome = $_nome;
-        return $this->altezza = $_altezza;
-        return $this->peso = $_peso;
-        return $this->livelloPrimaEvoluzione = $_livelloPrimaEvoluzione;
-        return $this->livelloSecondaEvoluzione = $_livelloSecondaEvoluzione;
+        $this->nome = $_nome;
+        $this->altezza = $_altezza;
+        $this->peso = $_peso;
+        $this->livelloPrimaEvoluzione = $_livelloPrimaEvoluzione;
+        $this->livelloSecondaEvoluzione = $_livelloSecondaEvoluzione;
+        $this->tipo = $_tipo;
     }
 };
+$classSale = new Tipo('sale', 'pokemon di tipo sale');
+$machoppo = new Pokemon('machoppo', '180', 130, 12, 56, $classSale);
+$marione = new Pokemon('marione', '12', 45, 15, 81, $classSale);
 
-$machoppo = new Pokemon('machoppo', '180', 130, 12, 56);
-$marione = new Pokemon('marione', '12', 45, 15, 81);
+var_dump($machoppo);
+var_dump($marione);
