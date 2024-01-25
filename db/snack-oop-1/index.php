@@ -8,4 +8,9 @@ class Pokemon
     public $peso;
     public $livelloPrimaEvoluzione;
     public $livelloSecondaEvoluzione;
+
+    public function mostraPeso()
+    {
+        return $this->peso;
+    }
 }
