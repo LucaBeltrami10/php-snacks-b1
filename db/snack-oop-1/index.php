@@ -4,6 +4,12 @@ class Tipo
 {
     public $tipo;
     public $descrizioneTipo;
+
+    function __construct($_tipo, $_descrizioneTipo)
+    {
+        $this->tipo = $_tipo;
+        $this->descrizioneTipo = $_descrizioneTipo;
+    }
 };
 
 
@@ -51,7 +57,7 @@ class Pokemon
 };
 $classSale = new Tipo('sale', 'pokemon di tipo sale');
 $machoppo = new Pokemon('machoppo', '180', 130, 12, 56, $classSale);
-$marione = new Pokemon('marione', '12', 45, 15, 81, $classSale);
+$marione = new Pokemon('marione', '12', 45, 15, 81, new Tipo('sale', 'pokemon sale'));
 
 var_dump($machoppo);
 var_dump($marione);
