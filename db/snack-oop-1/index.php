@@ -1,5 +1,10 @@
 <?php
 
+class Tipo
+{
+    public $tipo;
+    public $descrizioneTipo;
+};
 
 
 class Pokemon
