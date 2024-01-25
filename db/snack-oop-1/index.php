@@ -48,3 +48,6 @@ class Pokemon
         return $this->livelloSecondaEvoluzione = $_livelloSecondaEvoluzione;
     }
 };
+
+$machoppo = new Pokemon('machoppo', '180', 130, 12, 56);
+$marione = new Pokemon('marione', '12', 45, 15, 81);
