@@ -13,4 +13,12 @@ class Pokemon
     {
         return $this->peso;
     }
+    public function mostraNome()
+    {
+        return $this->nome;
+    }
+    public function mostraAlteza()
+    {
+        return $this->altezza;
+    }
 }
