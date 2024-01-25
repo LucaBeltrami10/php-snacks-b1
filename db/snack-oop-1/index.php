@@ -21,4 +21,13 @@ class Pokemon
     {
         return $this->altezza;
     }
+
+    function __construct($_nome, $_altezza, $_peso, $_livelloPrimaEvoluzione, $_livelloSecondaEvoluzione)
+    {
+        return $this->nome = $_nome;
+        return $this->altezza = $_altezza;
+        return $this->peso = $_peso;
+        return $this->livelloPrimaEvoluzione = $_livelloPrimaEvoluzione;
+        return $this->livelloSecondaEvoluzione = $_livelloSecondaEvoluzione;
+    }
 }
